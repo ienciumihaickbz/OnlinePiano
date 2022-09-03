@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ckbz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Small Piano Online</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="text-title">
+            Welcome
+        </div>
+        <div class="text-body">
+            This is a small scale (2 octaves) piano. Click the keys to play the instrument. The sounds used can be found
+            <a class="sounds-link" href="https://archive.org/details/24-piano-keys/key01.mp3" target="_blank" style="text-decoration: none;">here</a>.
+        </div>
+        <div id="piano">
+            <div class="control">
+                <div class="section left">
+                    <input type="range" min="0" max="1" step=".1" value=".2" class="slider" id="volumeRange" list="marks">
+                    <datalist id="marks">
+                    <option value="0"></option>
+                    <option value="0.1"></option>
+                    <option value="0.2"></option>
+                    <option value="0.3"></option>
+                    <option value="0.4"></option>
+                    <option value="0.5"></option>
+                    <option value="0.6"></option>
+                    <option value="0.7"></option>
+                    <option value="0.8"></option>
+                    <option value="0.9"></option>
+                    <option value="1"></option>
+                    </datalist>
+                </div>
+                <div class="section middle"></div>
+                <div class="section right"><a href="https://github.com/ienciumihaickbz" target="_blank" style="text-decoration: none; color: black;">ckbz</a></div>
+            </div>
+            <div class="keys">
+                <div class="black-keys">
+                    <div class="key black-key">
+                    </div>
+                    <div class="key black-key">   
+                    </div>
+                    <div class="key black-key">                       
+                    </div>
+                    <div class="key black-key">                       
+                    </div>
+                    <div class="key black-key">                       
+                    </div>
+                    <div class="key black-key">                       
+                    </div>
+                    <div class="key black-key">                       
+                    </div>
+                    <div class="key black-key">                       
+                    </div>
+                    <div class="key black-key">                      
+                    </div>
+                    <div class="key black-key">                      
+                    </div>
+                </div>
+    
+                <div class="white-keys">
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                    <div class="key white-key">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="app.js"></script>
+    </body>
+</html>

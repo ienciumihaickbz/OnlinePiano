@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    justify-items: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(27, 2, 27);
+}
+
+.text-title,
+.text-body {
+    font-family: Consolas;
+    font-weight: 700;
+    color: white;
+}
+
+.text-title {
+    font-size: 26px;
+}
+
+.text-body {
+    font-size: 18px;
+}
+
+#piano {
+    height: 290px;
+    padding: 30px 30px 95px 30px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: grid;
+    max-width: 950px;
+}
+
+.control {
+    display: grid;
+    background-color: #eeeeee;
+    height: 90px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.section {
+    border: 0 solid black;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.right {
+    font-family: Consolas;
+    display: flex;
+    justify-content: right;
+    padding-right: 8px;
+}
+
+.slider {
+    height: 130px;
+    width: 140px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.slider:hover {
+    cursor: pointer;
+}
+
+.keys {
+    position: relative;
+
+}
+
+.white-keys {
+    display: flex;
+}
+
+.white-key {
+    width: 68px;
+    height: 280px;
+    border-radius: 0 0 5px 5px;
+    border: solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.black-keys {
+    position: relative;
+    display: flex;
+}
+
+.black-key {
+    width: 38px;
+    height: 160px;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    background-color: black;
+    position: absolute;
+}
+
+.black-key:nth-child(1) {
+    left: 48px;
+}
+
+.black-key:nth-child(2) {
+    left: 117px;
+}
+
+.black-key:nth-child(3) {
+    left: 253px;
+}
+
+.black-key:nth-child(4) {
+    left: 320px;
+}
+
+.black-key:nth-child(5) {
+    left: 389px;
+}
+
+.black-key:nth-child(6) {
+    left: 525px;
+}
+
+.black-key:nth-child(7) {
+    left: 594px;
+}
+
+.black-key:nth-child(8) {
+    left: 730px;
+}
+
+.black-key:nth-child(9) {
+    left: 797px;
+}
+
+.black-key:nth-child(10) {
+    left: 865px;
+}
